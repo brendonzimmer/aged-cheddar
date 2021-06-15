@@ -17,5 +17,8 @@
   ],
   "author": "Brendon Zimmer",
   "license": "ISC",
-  "prepublish": "tsc"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brendonzimmer/aged-cheddar.git"
+  }
 }
