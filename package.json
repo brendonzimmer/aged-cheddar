@@ -1,0 +1,21 @@
+{
+  "name": "aged-cheddar",
+  "version": "1.0.0",
+  "description": "Find the true age of something at present time.",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "scripts": {
+    "dev": "tsc -watch"
+  },
+  "keywords": [
+    "age",
+    "time",
+    "year",
+    "old",
+    "years old",
+    "birthday"
+  ],
+  "author": "Brendon Zimmer",
+  "license": "ISC",
+  "prepublish": "tsc"
+}
