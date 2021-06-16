@@ -24,13 +24,13 @@ function check(year: selector["year"], month: selector["month"], day: selector["
 }
 
 /**
- * returns the age (in years) from a date until now.
+ * returns the age (in years) from present time or a specified date.
  */
-export default function age({ year, month, day }: selector) {
+export default function age({ year, month, day }: selector, until?: selector) {
   if (!check(year, month, day)) throw new Error(`Invalid Date - ${month + "/" + day + "/" + year} does not exist.`);
 
   const date = new Date(year, month - 1, day);
-  const now = new Date();
+  const now = until ? new Date(until.year, until.month - 1, until.day) : new Date();
 
   const difference = (now.getTime() - date.getTime()) / 1000 / 60 / 60 / 24 / 365.2425; // in years
   return difference;
