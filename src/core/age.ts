@@ -36,19 +36,19 @@ export function age([year, month, day]: SelectorArray, until?: SelectorArray, op
 
     // if diff > 1 year put in terms of year
     if (_years >= 1) {
-      return `${truncate(_years)}y ${_months ? `${truncate(_months)}m` : ""}`;
+      return `${truncate(_years)}y ${truncate(_months) ? truncate(_months) + "m" : ""}`;
     }
     // if diff > 1 month < 1 year ""
     if (_months >= 1) {
-      return `${truncate(_months)}m ${_weeks ? `${truncate(_weeks)}w` : ""}`;
+      return `${truncate(_months)}m ${truncate(_weeks) ? `${truncate(_weeks)}w` : ""}`;
     }
     // if diff > 1 week < 1 month ""
     if (_weeks >= 1) {
-      return `${truncate(_weeks)}w ${_days ? `${truncate(_days)}d` : ""}`;
+      return `${truncate(_weeks)}w ${truncate(_days) ? `${truncate(_days)}d` : ""}`;
     }
     // if diff > 1 day < 1 week ""
     if (_days >= 1) {
-      return `${truncate(_days)}d ${_hours ? `${truncate(_hours)}h` : ""}`;
+      return `${truncate(_days)}d ${truncate(_hours) ? `${truncate(_hours)}h` : ""}`;
     }
     // if diff > 1 hour < 1 day ""
     if (_hours >= 1) {

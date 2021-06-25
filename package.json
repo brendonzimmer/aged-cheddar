@@ -1,6 +1,6 @@
 {
   "name": "aged-cheddar",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "a simple library for dates and age.",
   "main": "dist/index.js",
   "scripts": {
