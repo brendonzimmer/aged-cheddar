@@ -1,11 +1,11 @@
-const { age } = require("../dist/index");
+const { age } = require("../dist");
 
-console.log(age([2003, 4, 1], null, { toString: true }));
+console.log(dist_1.age([2003, 4, 1], undefined, { toString: true }));
 
-console.log(age([2021, 4, 1], null, { toString: true }));
+console.log(dist_1.age([2021, 4, 1], undefined, { toString: true }));
 
-console.log(age([2021, 6, 1], null, { toString: true }));
+console.log(dist_1.age([2021, 6, 1], undefined, { toString: true }));
 
-console.log(age([2021, 6, 20], null, { toString: true }));
+console.log(dist_1.age([2021, 6, 20], undefined, { toString: true }));
 
-console.log(age([2021, 6, 25], null, { toString: true }));
+console.log(dist_1.age([2021, 6, 25], undefined, { toString: true }));
