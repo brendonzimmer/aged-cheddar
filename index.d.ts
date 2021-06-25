@@ -1,10 +1,14 @@
 /**
- * date input to the `age` function
+ * Date input type.
+ *
+ * Can produce invalid dates without the internal `check` function.
+ *
+ * Order: Year, Month, Day
  */
-interface selector {
-  year: number;
-  month: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
-  day:
+export type SelectorArray = [
+  number,
+  1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12,
+  (
     | 1
     | 2
     | 3
@@ -35,5 +39,6 @@ interface selector {
     | 28
     | 29
     | 30
-    | 31;
-}
+    | 31
+  )
+];
