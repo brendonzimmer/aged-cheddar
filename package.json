@@ -1,11 +1,10 @@
 {
   "name": "aged-cheddar",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "a simple library for dates and age.",
-  "main": "dist/age.js",
+  "main": "dist/index.js",
   "scripts": {
-    "dev": "tsc -watch",
-    "build": "tsc"
+    "dev": "tsc -watch"
   },
   "keywords": [
     "age",
@@ -17,6 +16,8 @@
   ],
   "files": [
     "dist",
+    "index.js",
+    "index.d.ts",
     "LICENSE.md"
   ],
   "author": "Brendon Zimmer",

@@ -1,5 +1,5 @@
 import type { SelectorArray } from "../index";
-import { check } from "./util/check";
+import { check } from "../helpers/check";
 
 /**
  * Returns the age (in years) from present time or a specified date.

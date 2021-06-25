@@ -1,5 +1,5 @@
 import type { SelectorArray } from "../index";
-import { check } from "./util/check";
+import { check } from "../helpers/check";
 
 /**
  * Returns the date `X` years from a `specified date`.

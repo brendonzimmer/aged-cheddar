@@ -1,4 +1,4 @@
-import type { SelectorArray } from "../../index";
+import type { SelectorArray } from "../index";
 import { leap } from "./leap";
 
 /**
